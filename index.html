@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HobbyHive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HobbyHive</h1>
+        <p>Connect with people who share your passions!</p>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Find and Save Your Hobby</h2>
+            <input type="text" id="hobby" placeholder="Enter your hobby">
+            <button onclick="saveHobby()">Save Hobby</button>
+            <button onclick="findHobbyists()">Find Connections</button>
+        </div>
+
+        <div class="connections" id="connections">
+            <h3>People with Similar Hobbies</h3>
+            <ul id="hobbyList">
+                <!-- Dynamic Hobby List -->
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    opacity: 0.9;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff6f91;
+    letter-spacing: 0.5px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(255, 121, 173, 0.4);
+}
+
+.form-container button:hover {
+    background: linear-gradient(90deg, #ff6b81, #ff709d);
+    transform: translateY(-3px);
+}
+
+.form-container button:active {
+    transform: translateY(1px);
+}
+
+.connections {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.connections h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ff6f91;
+}
+
+.connections ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.connections li {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+    color: #555;
+}
+
+.connections li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .form-container, .connections {
+        padding: 1.5rem;
+    }
+
+    .form-container h2, .connections h3 {
+        font-size: 1.4rem;
+    }
+}
